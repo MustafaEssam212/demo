@@ -10,8 +10,8 @@ import EventsHomepage from "../pages/EventsHomepage";
 const appRoutes = (
   <Route path="/" element={<Layout />}>
     <Route index element={<Home />} />
-    <Route path="ticketing" element={<TicketingPage />} />
-    <Route path="events" element={<EventsHomepage />} />
+    <Route path="/ticketing" element={<TicketingPage />} />
+    <Route path="/events" element={<EventsHomepage />} />
     <Route path="*" element={<NotFound />} />
   </Route>
 );
