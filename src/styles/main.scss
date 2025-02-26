@@ -1,0 +1,61 @@
+
+  @use './components/reusable/Reusable.scss';
+  @use './components/utils/Utils.scss';
+  @use './components/ticketing-page/TicketingPage.scss';
+  @use './components/home/Home.scss';
+  @use './components/events-homepage/EventsHomepage.scss';
+  @use './components/common/Common.scss';
+  @use './components/navigations/Navigations.scss';
+
+  @font-face {
+    font-family: 'RobotoVariable';
+    src: url('../assets/fonts/Roboto-Variable.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+  }
+
+
+  @font-face {
+    font-family: 'LexendDecaVariable';
+    src: url('../assets/fonts/LexendDeca-Variable.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+  }
+
+  :root{
+    --font-roboto: 'RobotoVariable', sans-serif;
+    --font-lexend-deca: 'LexendDecaVariable', sans-serif;
+    --black-text-color: #202020;
+    --second-black-text-color: #474746;
+    --third-black-text-color: #213343;
+    --yellow-color: #E9D023;
+    --burgundy-color: #d80073;
+    --border-color: #D9D9D9;
+    --soft-burgundy-background-color: #F6D5DE;
+    --soft-black-text-color: #474746;
+    --dark-gray-background-color: #343433;
+    --soft-yellow-background-color: #FCF9E3;
+    --icon-card-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+  }
+
+
+  *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      outline: none;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  button{
+    border: none;
+    cursor: pointer;
+  }
+
+  body{
+      font-family: var(--font-roboto);
+      overflow-x: hidden;
+  }

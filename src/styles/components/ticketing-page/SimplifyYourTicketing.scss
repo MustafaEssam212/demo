@@ -1,0 +1,111 @@
+
+
+.simplify-your-ticketing-container{
+    background-color: var(--soft-burgundy-background-color);
+    display: flex;
+    padding: clamp(24px, 4vw, 32px) clamp(36px, 4vw, 58px);
+    align-items: center;
+
+
+    .slogans{
+        width: 55%;
+
+        .slogan-headline{
+            color: var(--black-text-color);
+        }
+
+        .slogan-parag{
+            font-weight: 400;
+            width: 70%;
+            margin-top: 16px;
+            color: var(--second-black-text-color);
+        }
+    }
+
+    .img{
+        width: 45%;
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        img{
+            object-fit: contain;
+            max-width: 100%;
+        }
+
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .simplify-your-ticketing-container{
+        flex-wrap: wrap;
+        gap: 30px;
+        .slogans{
+            width: 70%;
+    
+           
+            .slogan-parag{
+                width: 100%;
+            }
+        }
+
+        .img{
+            width: 55%;
+            margin-left: auto;
+
+            img{
+                object-fit: contain;
+                height: inherit;
+                width: 100%;
+            }
+    
+        }
+    }
+}
+
+
+// Tablets
+@media (max-width: 768px) {
+
+    .simplify-your-ticketing-container{
+
+        .img{
+            width: 55%;
+            margin-left: auto;
+
+            img{
+                object-fit: contain;
+                height: inherit;
+                width: 100%;
+            }
+    
+        }
+    }
+    
+}
+
+
+
+@media (max-width: 589px) {
+    .simplify-your-ticketing-container{
+        .slogans{
+            width: 90%;
+        }
+    }
+}
+
+
+// Mobiles
+@media (max-width: 480px) {
+    
+    .simplify-your-ticketing-container{
+        .slogans{
+            width: 100%;
+        }
+
+        .img{
+            display: none;
+        }
+    }
+
+}

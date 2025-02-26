@@ -1,0 +1,244 @@
+@use './SimplifyYourTicketing.scss';
+@use './GameChanging.scss';
+@use './ExpandYourEvent.scss';
+@use './QRCode.scss';
+@use './BeyondTickets.scss';
+
+
+.reusable-image-and-text{
+    width: 90%;
+    margin: 0 auto;
+    padding: 50px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .texts{
+        width: 50%;
+        flex-shrink: 0;
+
+        h1{
+            color: var(--third-black-text-color);
+            font-weight: 900;
+        }
+
+        h3{
+            font-weight: 900;
+            color: var(--black-text-color);
+        }
+
+        h5{
+            color: var(--second-black-text-color);
+            font-weight: 400;
+        }
+
+
+        .texts-with-icons{
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            margin-top: 32px;
+
+            .text-with-icon{
+                display: flex;
+                align-items: center;
+                gap: 12px;
+            }
+        }
+    }
+
+    .image-container{
+        width: 40%;
+
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+
+.unforgettable-experiences-container{
+    .texts{
+        order: 1;
+    }
+
+    .image-container{
+        order: 0;
+    }
+}
+
+
+.stay-in-control-container{
+    gap: 150px;
+    .texts{
+        order: 1;
+    }
+
+    .image-container{
+        order: 0;
+        width: 15%;
+        margin: 0 auto;
+    }
+}
+
+
+.ensure-secure-container{
+    @extend .stay-in-control-container;
+
+    .texts{
+        order: 0;
+    }
+
+    .image-container{
+        margin-right: auto;
+        order: 1;
+    }
+}
+
+.around-the-clock{
+    @extend .ensure-secure-container;
+
+    .texts{
+
+        h1{
+            color: var(--black-text-color);
+        }
+
+        h3{
+            font-weight: 400;
+        }
+    }
+
+
+}
+
+
+@media (max-width: 1024px) {
+    .reusable-image-and-text{
+        gap: 20px;
+        
+        .texts{
+            width: 50%;
+        }
+    
+        .image-container{
+           width: 50%; 
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+
+    .stay-in-control-container{
+        gap: 150px;
+
+        .texts{
+            order: 1;
+        }
+    
+        .image-container{
+            order: 0;
+            width: 20%;
+        }
+    }
+
+    .ensure-secure-container{
+        .texts{
+            order: 0;
+        }
+    
+        .image-container{
+            order: 1;
+        }
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .reusable-image-and-text{
+        width: 95%;
+        flex-wrap: wrap;
+        gap: 32px;
+
+        .texts{
+            width: 90%;
+          
+    
+            .texts-with-icons{
+                gap: 12px;
+                margin-top: 16px;
+    
+                .text-with-icon{
+                    gap: 12px;
+                }
+            }
+        }
+    
+        .image-container{
+            width: 80%;
+            margin-left: auto;
+            img{
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+
+    .unforgettable-experiences-container{
+        .texts{
+            order: 0;
+        }
+    
+        .image-container{
+            order: 1;
+        }
+    }
+
+    .stay-in-control-container{
+        .texts{
+            order: 0;
+        }
+    
+        .image-container{
+            order: 1;
+            margin: 0 auto;
+            width: 30%;
+        }
+    }
+
+    .ensure-secure-container{
+
+        .image-container{
+            margin: 0 auto;
+        }
+    }
+}
+
+
+@media (max-width: 480px) {
+    .reusable-image-and-text{
+        width: 95%;
+        padding: 25px;
+
+        .texts{
+            width: 95%;
+          
+    
+            .texts-with-icons{
+                gap: 16px;
+
+    
+                .text-with-icon{
+                    gap: 16px;
+                }
+            }
+        }
+    
+        .image-container{
+            display: none;
+        }
+    }
+}
