@@ -143,6 +143,40 @@
 
       }
 }
+
+
+@media (max-width: 431px) and (min-height: 657px){
+    .slider-container{
+
+        .slick-slider {
+         
+            .slick-list{
+             
+    
+                .slick-track{
+                  
+                    .slick-slide{
+                       transform: scale(.6);
+                       -webkit-transform: scale(.6);
+                       -moz-transform: scale(.6);
+                       -ms-transform: scale(.6);
+                       -o-transform: scale(.6);
+}
+    
+                    .slick-center{
+                        transform: scale(1.2);
+                        -webkit-transform: scale(1.2);
+                        -moz-transform: scale(1.2);
+                        -ms-transform: scale(1.2);
+                        -o-transform: scale(1.2);
+}
+    
+                }
+            }
+    
+        }
+    }   
+}
   
 
   

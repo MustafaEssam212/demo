@@ -34,20 +34,8 @@ const ImageSlider = ({imgs}) => {
       responsive: [
         {
           breakpoint: 480,
-          settings: { slidesToShow: 1, centerMode: true, centerPadding: "25%" },
-        },
-        {
-          breakpoint: 415,
           settings: { slidesToShow: 1, centerMode: true, centerPadding: "20%" },
-        },
-        {
-          breakpoint: 385,
-          settings: { slidesToShow: 1, centerMode: true, centerPadding: "19%" },
-        },
-        {
-          breakpoint: 342,
-          settings: { slidesToShow: 1, centerMode: true, centerPadding: "17%" },
-        },
+        }
       ]
     };
   
