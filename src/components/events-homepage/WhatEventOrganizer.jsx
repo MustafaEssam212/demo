@@ -22,7 +22,7 @@ const WhatEventOrganizer = () => {
     const settings = {
         initialSlide: 1,
         infinite: true,
-        centerMode: true,
+        centerMode: false,
         centerPadding: "0",
         slidesToShow: 1,
         speed: 500,
@@ -56,7 +56,6 @@ const WhatEventOrganizer = () => {
             <div className="what-event-organizers-carousel">
                 <Suspense fallback={null}>
                     <Slider {...settings}>
-                        
                         <ImageWithPlaceholder src={useWindowWidth() > 480 ? CustomerRateImageOne : CustomerRateMobileImageOne} alt="Customer Rate" title="Customer Rate" />
                         <ImageWithPlaceholder src={useWindowWidth() > 480 ? CustomerRateImageTwo : CustomerRateMobileImageTwo} alt="Customer Rate" title="Customer Rate" />
                     </Slider>
