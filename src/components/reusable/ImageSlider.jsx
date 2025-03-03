@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import ImageWithPlaceholder from "./ImageWithPlaceholder";
 
 
-// Use this custom component to make a responsive slider || carousel of an array of images (src as string or statically imported) (Array of strings).
+// Use this custom component to make a responsive slider || carousel => Dots + No Arrows + 3 Images To Show => of an array of images (src as string or statically imported) (Array of strings).
 // This custom component uses ImagesWithPlaceholder that manage onLoad attr to show loading circle to user untill load the pic
 // Example =>  <ImageSlider imgs={['https://link-to-image', 'or imported pic statically', Pic]} />
 
@@ -18,8 +18,6 @@ const Slider = lazy(() => import("react-slick"));
 
 const ImageSlider = ({imgs}) => {
 
-
- 
 
 
     const settings = {

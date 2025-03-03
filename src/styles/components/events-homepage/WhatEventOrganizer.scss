@@ -1,0 +1,102 @@
+
+
+
+.what-event-organizers-container{
+    background-color: var(--gray-background-color);
+    padding: 44px;
+
+    h1{
+        font-weight: 600;
+        color: var(--third-black-text-color);
+        font-family: var(--font-lexend-deca);
+        text-align: center;
+    }
+
+
+    .what-event-organizers-carousel{
+        width: 90%;
+        margin: 18px auto;
+
+        .slick-slider{
+            .slick-list{
+                .slick-track{
+                    .slick-slide{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        img{
+                            width: 100%;
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .slick-dots{
+            display: flex !important;
+            justify-content: center;
+            align-items: center;
+            gap: clamp(5px, 1vw, 7px);
+            height: 10%;
+            bottom: -5.5%;
+    
+            li {
+                width: clamp(8px, 2vw, 12px);
+                height: clamp(8px, 2vw, 12px);
+                margin: 0;
+                padding: 0;
+                background: #999998;
+                border-radius: 50%;
+                transition: background 0.3s ease;
+                -webkit-transition: background 0.3s ease;
+                -moz-transition: background 0.3s ease;
+                -ms-transition: background 0.3s ease;
+                -o-transition: background 0.3s ease;
+    
+                button{
+                    &::before{
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .slick-dots li.slick-active {
+            background: var(--yellow-color);
+        }
+    }
+}
+
+
+@media (max-width: 480px) {
+    .what-event-organizers-container{
+        padding: 0;
+
+        h1{
+            font-family: var(--font-roboto);
+            text-align: left;
+            padding: 34px 34px 0 34px;
+            font-weight: 700;
+        }
+        .what-event-organizers-carousel{
+            width: 100%;
+            margin-top: -10px;
+
+            .slick-slider{
+                .slick-list{
+                    .slick-track{
+                        .slick-slide{
+                            display: block;
+                        }
+    
+                    }
+                }
+            }
+
+            .slick-dots{
+                bottom: 0;
+            }
+        }
+    }
+}

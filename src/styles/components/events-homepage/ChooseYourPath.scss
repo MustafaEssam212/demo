@@ -1,0 +1,72 @@
+
+
+
+.choose-your-path-container{
+    background-color: var(--soft-yellow-background-color);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px 25px;
+
+    h1{
+        font-weight: 900;
+        color: var(--black-text-color);
+    }
+
+    .dropmenu-btn-container{
+        display: flex;
+        align-items: center;
+        gap: 7px;
+
+        .choose-your-path-dropmenu{
+            height: 42px;
+            width: clamp(238px, 29vw, 358px);
+        }
+
+        button:not(.dropmenu-choices button){
+            background-color: var(--burgundy-color);
+            color: white;
+            font-weight: 400;
+            font-size: 18px;
+            height: 42px;
+            border-radius: 4px;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            -ms-border-radius: 4px;
+            -o-border-radius: 4px;
+            padding: 13px 20px;
+}
+    }
+}
+
+
+@media (max-width: 768px) {
+    .choose-your-path-container{
+        gap: 15px;
+        .dropmenu-btn-container{
+            gap: 5px;
+        }
+      
+
+    }
+}
+
+
+@media (max-width: 558px) {
+    .choose-your-path-container{
+        flex-direction: column;
+        margin-top: 15px;
+        h1{
+            font-weight: 400;
+            text-align: center;
+        }
+
+        .dropmenu-btn-container{
+         
+    
+            button:not(.dropmenu-choices button){
+                font-size: 15px;
+            }
+        }
+    }
+}

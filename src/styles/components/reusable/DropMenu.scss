@@ -1,0 +1,66 @@
+
+
+
+.dropmenu{
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+
+    .value-container{
+        background-color: white;
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        border: 2px solid var(--burgundy-color);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 15px;
+        cursor: pointer;
+
+        p{
+            color: var(--second-black-text-color);
+            font-weight: 400;
+        }
+    }
+
+
+    .dropmenu-choices{
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        border: 2px solid var(--burgundy-color);
+        top: 100%;
+        margin-top: 5px;
+        padding: 0px 15px;
+        
+        button{
+            background-color: transparent;
+            min-height: clamp(45px, 5vw, 60px);
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            font-weight: 600;
+            color: var(--third-black-text-color);
+            border-bottom: 1px solid rgba(83, 83, 83, 0.30);
+            transition: .2s all linear;
+            -webkit-transition: .2s all linear;
+            -moz-transition: .2s all linear;
+            -ms-transition: .2s all linear;
+            -o-transition: .2s all linear;
+
+            &:hover{
+                color: var(--burgundy-color);
+            }
+}
+    }
+}

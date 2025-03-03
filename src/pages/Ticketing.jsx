@@ -1,36 +1,39 @@
 
-import SimplifyYourTicketing from "../components/ticketing-page/SimplifyYourTicketing";
-import GameChanging from "../components/ticketing-page/GameChanging";
-import ExpandYourEvent from "../components/ticketing-page/ExpandYourEvent";
-import ScalableFlexibility from "../components/ticketing-page/ScalableFlexibility";
-import UnforgettableExperiences from "../components/ticketing-page/UnforgettableExperiences";
-import ElevateSeating from "../components/ticketing-page/ElevateSeating";
-import StayInControl from "../components/ticketing-page/StayInControl";
-import EnsureSecure from "../components/ticketing-page/EnsureSecure";
-import QRCode from "../components/ticketing-page/QRCode";
-import BeyondTickets from "../components/ticketing-page/BeyondTickets";
-import AroundTheClock from "../components/ticketing-page/AroundTheClock";
-import GetYourEvent from "../components/common/GetYourNextEvent";
-import TrustedPartners from "../components/common/TrustedPartners";
+
+import { Suspense, lazy } from "react";
+
+const SimplifyYourTicketing = lazy(() => import("../components/ticketing-page/SimplifyYourTicketing"));
+const GameChanging = lazy(() => import("../components/ticketing-page/GameChanging"));
+const ExpandYourEvent = lazy(() => import("../components/ticketing-page/ExpandYourEvent"));
+const ScalableFlexibility = lazy(() => import("../components/ticketing-page/ScalableFlexibility"));
+const UnforgettableExperiences = lazy(() => import("../components/ticketing-page/UnforgettableExperiences"));
+const ElevateSeating = lazy(() => import("../components/ticketing-page/ElevateSeating"));
+const StayInControl = lazy(() => import("../components/ticketing-page/StayInControl"));
+const EnsureSecure = lazy(() => import("../components/ticketing-page/EnsureSecure"));
+const QRCode = lazy(() => import("../components/ticketing-page/QRCode"));
+const BeyondTickets = lazy(() => import("../components/ticketing-page/BeyondTickets"));
+const AroundTheClock = lazy(() => import("../components/ticketing-page/AroundTheClock"));
+const GetYourEvent = lazy(() => import("../components/common/GetYourNextEvent"));
+const TrustedPartners = lazy(() => import("../components/common/TrustedPartners"));
 
 const TicketingPage = () => {
 
 
     return (
       <>
-        <SimplifyYourTicketing />
-        <GameChanging />
-        <ExpandYourEvent />
-        <ScalableFlexibility />
-        <UnforgettableExperiences />
-        <ElevateSeating />
-        <StayInControl />
-        <EnsureSecure />
-        <QRCode />
-        <BeyondTickets />
-        <AroundTheClock />
-        <GetYourEvent />
-        <TrustedPartners />
+        <Suspense fallback={null}><SimplifyYourTicketing /></Suspense>
+        <Suspense fallback={null}><GameChanging /></Suspense>
+        <Suspense fallback={null}><ExpandYourEvent /></Suspense>
+        <Suspense fallback={null}><ScalableFlexibility /></Suspense>
+        <Suspense fallback={null}><UnforgettableExperiences /></Suspense>
+        <Suspense fallback={null}><ElevateSeating /></Suspense>
+        <Suspense fallback={null}><StayInControl /></Suspense>
+        <Suspense fallback={null}><EnsureSecure /></Suspense>
+        <Suspense fallback={null}><QRCode /></Suspense>
+        <Suspense fallback={null}><BeyondTickets /></Suspense>
+        <Suspense fallback={null}><AroundTheClock /></Suspense>
+        <Suspense fallback={null}><GetYourEvent /></Suspense>
+        <Suspense fallback={null}><TrustedPartners /></Suspense>
       </> 
     );
 }

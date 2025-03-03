@@ -1,0 +1,110 @@
+
+
+
+.create-event-experience{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    overflow: hidden;
+    background-color: #F7F7F7;
+    padding: 30px 0;
+    min-height: 307px;
+
+    h3{
+        color: var(--second-black-text-color);
+        font-weight: 900;
+        text-align: left;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+
+    .images-container{
+        width: 90%;
+        display: flex;
+        justify-content: space-evenly;
+        position: relative;
+        margin: 25px auto;
+
+        img{
+            width: 98.651px;
+            height: 129.617px;
+            flex-shrink: 0;
+        }
+    }
+
+    .dots{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+        width: 100%;
+        display: none;
+        margin-top: 25px;
+        button{
+            width: clamp(8px, 2vw, 12px);
+            height: clamp(8px, 2vw, 12px);
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            cursor: pointer;
+            background-color: #858583;
+        }
+
+        .active{
+            background-color: var(--yellow-color);
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .create-event-experience{
+        gap: 13px;
+
+        h3{
+            font-weight: 400;
+        }
+
+        .images-container{
+            width: 90%;
+            overflow-x: auto;
+            margin: 15px auto 0 auto;
+            scroll-behavior: smooth;
+            white-space: nowrap;
+            scrollbar-width: none;
+            justify-content: space-between;
+            gap: 80px;
+
+            img{
+                width: 106.911px;
+                height: 120.031px;
+            }
+            
+            button{
+                display: flex;
+            }
+        }
+
+        .images-container::-webkit-scrollbar {
+            display: none;
+        }
+        
+
+        .dots{
+            display: flex;
+        }
+    }
+}
+
+
+@media (max-width: 480px) {
+    .create-event-experience{
+        .images-container{
+            margin-top: 25px;
+            gap: 15px;
+        }
+    }
+}

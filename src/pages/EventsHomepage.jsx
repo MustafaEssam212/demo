@@ -1,20 +1,29 @@
 
+import { Suspense, lazy } from "react";
 
-import TrustedPartners from "../components/common/TrustedPartners";
-import GetYourEvent from "../components/common/GetYourNextEvent";
-import CreateEventExperience from "../components/events-homepage/CreateEventExperience";
-import IntroImageSlider from "../components/events-homepage/IntroImageSlider";
-
-
+const TrustedPartners = lazy(() => import("../components/common/TrustedPartners"));
+const GetYourEvent = lazy(() => import("../components/common/GetYourNextEvent"));
+const CreateEventExperience = lazy(() => import("../components/common/CreateEventExperience"));
+const IntroImageSlider = lazy(() => import("../components/events-homepage/IntroImageSlider"));
+const ChooseYourPath = lazy(() => import("../components/events-homepage/ChooseYourPath"));
+const ClientsStatistics = lazy(() => import("../components/events-homepage/ClientsStatistics"));
+const WhyChooseRescounts = lazy(() => import("../components/events-homepage/WhyChooseRescounts"));
+const WhyOurCustomers = lazy(() => import("../components/events-homepage/WhyOurCustomers"));
+const WhatEventOrganizer = lazy(() => import("../components/events-homepage/WhatEventOrganizer"));
 
 const EventsHomepage = () => {
 
     return(
         <>
-            <IntroImageSlider />
-            <CreateEventExperience />
-            <GetYourEvent />
-            <TrustedPartners />
+            <Suspense fallback={null}><IntroImageSlider /></Suspense>
+            <Suspense fallback={null}><ChooseYourPath /></Suspense>
+            <Suspense fallback={null}><ClientsStatistics /></Suspense>
+            <Suspense fallback={null}><WhyChooseRescounts /></Suspense>
+            <Suspense fallback={null}><WhyOurCustomers /></Suspense>
+            <Suspense fallback={null}><WhatEventOrganizer /></Suspense>
+            <Suspense fallback={null}><CreateEventExperience /></Suspense>
+            <Suspense fallback={null}><GetYourEvent /></Suspense>
+            <Suspense fallback={null}><TrustedPartners /></Suspense>
         </>
     )
 }
