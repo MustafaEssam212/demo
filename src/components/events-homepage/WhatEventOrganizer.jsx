@@ -9,8 +9,8 @@ import ImageWithPlaceholder from "../reusable/ImageWithPlaceholder";
 import CustomerRateMobileImageOne from '../../assets/static/svg/events-homepage/customer-rate-mobile.svg';
 import CustomerRateMobileImageTwo from '../../assets/static/svg/events-homepage/customer-rate-mobile-elisa.svg';
 import { useState, useEffect } from "react";
-
-
+import AndrewMobileSVG from "../../assets/AndrewMobileSVG";
+import SvgIcon from "../../assets/mobileSVG";
 
 // Import The Slider as Lazy component
 const Slider = lazy(() => import("react-slick"));
@@ -56,8 +56,8 @@ const WhatEventOrganizer = () => {
             <div className="what-event-organizers-carousel">
                 <Suspense fallback={null}>
                     <Slider {...settings}>
-                        <ImageWithPlaceholder src={useWindowWidth() > 480 ? CustomerRateImageOne : CustomerRateMobileImageOne} alt="Customer Rate" title="Customer Rate" />
-                        <ImageWithPlaceholder src={useWindowWidth() > 480 ? CustomerRateImageTwo : CustomerRateMobileImageTwo} alt="Customer Rate" title="Customer Rate" />
+                        <AndrewMobileSVG />
+                        <SvgIcon />
                     </Slider>
                 </Suspense>
             </div>
