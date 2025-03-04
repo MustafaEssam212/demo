@@ -70,7 +70,7 @@
 
 @media (max-width: 480px) {
     .what-event-organizers-container{
-        padding: 0;
+        padding: 0 0 20px 0;
 
         h1{
             font-family: var(--font-roboto);
@@ -80,18 +80,15 @@
         }
         .what-event-organizers-carousel{
             width: 100%;
-            margin-top: -10px;
 
             .slick-slider{
                 .slick-list{
                     .slick-track{
                         .slick-slide{
-                            justify-content: unset;
-                            align-items: flex-start;
-                            
+                            display: block;
                             img{
-                                max-width: 380px;
-                                max-height: 298px;
+                                width: 380px;
+                                height: 298px;
                             }
                         }
     
@@ -100,7 +97,7 @@
             }
 
             .slick-dots{
-                bottom: 0;
+                bottom: -10.5%;
             }
         }
     }

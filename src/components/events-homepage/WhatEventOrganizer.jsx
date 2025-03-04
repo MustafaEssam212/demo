@@ -56,8 +56,8 @@ const WhatEventOrganizer = () => {
             <div className="what-event-organizers-carousel">
                 <Suspense fallback={null}>
                     <Slider {...settings}>
-                        <ImageWithPlaceholder objectFit="contain" src={useWindowWidth() > 480 ? CustomerRateImageOne : CustomerRateMobileImageOne} alt="Customer Rate" title="Customer Rate" />
-                        <ImageWithPlaceholder objectFit="contain" src={useWindowWidth() > 480 ? CustomerRateImageTwo : CustomerRateMobileImageTwo} alt="Customer Rate" title="Customer Rate" />
+                        <ImageWithPlaceholder src={useWindowWidth() > 480 ? CustomerRateImageOne : CustomerRateMobileImageOne} alt="Customer Rate" title="Customer Rate" />
+                        <ImageWithPlaceholder src={useWindowWidth() > 480 ? CustomerRateImageTwo : CustomerRateMobileImageTwo} alt="Customer Rate" title="Customer Rate" />
                     </Slider>
                 </Suspense>
             </div>
