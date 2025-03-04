@@ -1,13 +1,13 @@
 
 import ResponsiveTypography from "../reusable/ResponsiveTypography";
 import CustomerRateImageOne from '../../assets/static/svg/events-homepage/customer-rate.svg';
-import CustomerRateImageTwo from '../../assets/static/svg/events-homepage/customer-rate.svg';
+import CustomerRateImageTwo from '../../assets/static/svg/events-homepage/customer-rate-elisa.svg';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { lazy, Suspense } from "react";
 import ImageWithPlaceholder from "../reusable/ImageWithPlaceholder";
 import CustomerRateMobileImageOne from '../../assets/static/svg/events-homepage/customer-rate-mobile.svg';
-import CustomerRateMobileImageTwo from '../../assets/static/svg/events-homepage/customer-rate-mobile.svg';
+import CustomerRateMobileImageTwo from '../../assets/static/svg/events-homepage/customer-rate-mobile-elisa.svg';
 import { useState, useEffect } from "react";
 
 
@@ -20,7 +20,7 @@ const WhatEventOrganizer = () => {
 
     // React Slick Settings
     const settings = {
-        initialSlide: 1,
+        initialSlide: 0,
         infinite: true,
         centerMode: false,
         centerPadding: "0",
