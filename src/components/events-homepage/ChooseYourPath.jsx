@@ -14,7 +14,7 @@ const ChooseYourPath = () => {
 
             <div className="dropmenu-btn-container">
                 <div className="choose-your-path-dropmenu">
-                    <DropMenu defaultVal="I am a(n)" choices={['Create events', 'Buy tickets', 'Sponsors', 'Vendors', 'Exhibitors', 'Speaker', 'Artist', 'Volunteer',]} sendDataToParent={getDataFromDropMenu} />
+                    <DropMenu defaultVal="I am a(n)" choices={['Create events', 'Buy tickets', 'Sponsor', 'Vendor', 'Exhibitor', 'Speaker', 'Artist', 'Volunteer',]} sendDataToParent={getDataFromDropMenu} />
                 </div>
 
                 <button aria-label="Go" title="Go">Go</button>

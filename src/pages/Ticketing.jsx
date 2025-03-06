@@ -1,7 +1,7 @@
 
 
 import { Suspense, lazy } from "react";
-
+import FallbackComponent from "../components/utils/FallbackComponent";
 const SimplifyYourTicketing = lazy(() => import("../components/ticketing-page/SimplifyYourTicketing"));
 const GameChanging = lazy(() => import("../components/ticketing-page/GameChanging"));
 const ExpandYourEvent = lazy(() => import("../components/ticketing-page/ExpandYourEvent"));
@@ -21,19 +21,30 @@ const TicketingPage = () => {
 
     return (
       <>
-        <Suspense fallback={null}><SimplifyYourTicketing /></Suspense>
-        <Suspense fallback={null}><GameChanging /></Suspense>
-        <Suspense fallback={null}><ExpandYourEvent /></Suspense>
-        <Suspense fallback={null}><ScalableFlexibility /></Suspense>
-        <Suspense fallback={null}><UnforgettableExperiences /></Suspense>
-        <Suspense fallback={null}><ElevateSeating /></Suspense>
-        <Suspense fallback={null}><StayInControl /></Suspense>
-        <Suspense fallback={null}><EnsureSecure /></Suspense>
-        <Suspense fallback={null}><QRCode /></Suspense>
-        <Suspense fallback={null}><BeyondTickets /></Suspense>
-        <Suspense fallback={null}><AroundTheClock /></Suspense>
-        <Suspense fallback={null}><GetYourEvent /></Suspense>
-        <Suspense fallback={null}><TrustedPartners /></Suspense>
+        {/* Curtical Components */}
+        <SimplifyYourTicketing />
+        <GameChanging />
+        <ExpandYourEvent />
+
+        {/* Lazy Components */}
+        <Suspense fallback={<FallbackComponent />}>
+          <ScalableFlexibility />
+          <UnforgettableExperiences />
+          <ElevateSeating />
+        </Suspense>
+
+        <Suspense fallback={<FallbackComponent />}>
+          <StayInControl />
+          <EnsureSecure />
+          <QRCode />
+        </Suspense>
+
+        <Suspense fallback={<FallbackComponent />}>
+          <BeyondTickets />
+          <AroundTheClock />
+          <GetYourEvent />
+          <TrustedPartners />
+        </Suspense>
       </> 
     );
 }
