@@ -8,7 +8,6 @@ import { Suspense, lazy } from "react";
 import { Slide } from "react-toastify";
 
 
-
 // Import React Toastify as a lazy component to decrease the bundle size of loaded components
 const ToastContainer = lazy(() => import("react-toastify").then((module) => ({ default: module.ToastContainer })));
 
@@ -29,12 +28,17 @@ const Layout = () => {
     return (
         <>
             {loading && <FullPageSpinner />}
+
             <ScrollToTop />
+
             <Suspense fallback={null}>
                 <ToastContainer position="top-right" autoClose={5000} hideProgressBar newestOnTop closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover theme="light" transition={Slide} />
             </Suspense>
+
             <Header />
+
             <main className="main-content"><Outlet /></main>
+
             <Footer />
         </>
     );

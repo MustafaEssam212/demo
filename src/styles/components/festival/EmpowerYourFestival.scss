@@ -1,0 +1,7 @@
+@use '../ticketing-page/SimplifyYourTicketing.scss';
+
+
+
+.empower-your-festival-container{
+    @extend .simplify-your-ticketing-container;
+}

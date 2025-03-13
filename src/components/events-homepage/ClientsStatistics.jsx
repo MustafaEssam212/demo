@@ -57,7 +57,7 @@ const ClientsStatistics = () => {
               settings: { dots: true, slidesToShow: 3 },
             }
           ]
-      };
+    };
 
 
 

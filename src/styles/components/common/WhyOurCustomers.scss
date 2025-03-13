@@ -1,0 +1,149 @@
+
+
+
+.why-our-customer-container{
+    background-color: var(--soft-yellow-background-color);
+    padding: 50px 0 20px 0;
+
+    h1{
+        color: var(--black-text-color);
+        font-weight: 900;
+    }
+
+    .why-our-customer-carousel{
+        width: 85%;
+        margin: 25px auto;
+
+        .slick-slider{
+
+            .slick-list{
+                .slick-track{
+                    .slick-slide{
+                        img{
+                            -webkit-user-drag: none;
+                            pointer-events: none;
+                        }
+
+                        .mobile-customer-rate{
+                            background-color: var(--second-black-text-color);
+                            margin: 14px 0px 25px 0px;
+                            width: 90%;
+                            border-top-right-radius: 8px;
+                            border-bottom-right-radius: 8px;
+                            min-height: 261px;
+                            position: relative;
+                            padding: 18px 30px;
+                
+                            .dots{
+                                position: absolute;
+                                top: 35px;
+                                right: -13px;
+                                background-color: white;
+                                border-radius: 10px;
+                                -webkit-border-radius: 10px;
+                                -moz-border-radius: 10px;
+                                -ms-border-radius: 10px;
+                                -o-border-radius: 10px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                padding: 0px 2px;
+                
+                                .icon{
+                                    font-size: 25px;
+                                    color: var(--burgundy-color);
+                                    border-radius: 50%;
+                                    -webkit-border-radius: 50%;
+                                    -moz-border-radius: 50%;
+                                    -ms-border-radius: 50%;
+                                    -o-border-radius: 50%;
+                                }
+                }
+                
+                            .stars{
+                                .icon{
+                                    color: var(--yellow-color);
+                                }
+                            }
+                
+                            p{  
+                                color: var(--yellow-color);
+                                font-size: 14px;
+                                margin-top: 10px;
+                            }
+                
+                            h6{
+                                font-size: 14px;
+                                color: white;
+                                font-weight: 400;
+                                margin-top: 15px;
+                                max-width: 90%;
+                            }
+                
+                            p:nth-child(4){
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .slick-dots{
+            display: flex !important;
+            justify-content: center;
+            align-items: center;
+            gap: clamp(5px, 1vw, 7px);
+            height: 10%;
+            bottom: -5.5%;
+    
+            li {
+                width: clamp(8px, 2vw, 12px);
+                height: clamp(8px, 2vw, 12px);
+                margin: 0;
+                padding: 0;
+                background: #999998;
+                border-radius: 50%;
+                transition: background 0.3s ease;
+                -webkit-transition: background 0.3s ease;
+                -moz-transition: background 0.3s ease;
+                -ms-transition: background 0.3s ease;
+                -o-transition: background 0.3s ease;
+    
+                button{
+                    &::before{
+                        display: none;
+                    }
+                }
+            }
+        }
+    
+        .slick-dots li.slick-active {
+            background: var(--yellow-color);
+        }
+    }
+}
+
+
+@media (max-width: 480px) {
+    .why-our-customer-container{
+        padding: 20px 0px;
+
+        .why-our-customer-carousel{
+            width: 100%;
+            margin: 10px 0px;
+
+            .slick-slider{
+                .slick-list{
+                    .slick-track{
+                        .slick-slide{
+                            .mobile-customer-rate{
+                                width: 90% !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

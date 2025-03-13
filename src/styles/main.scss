@@ -6,6 +6,7 @@
   @use './components/events-homepage/EventsHomepage.scss';
   @use './components/common/Common.scss';
   @use './components/navigations/Navigations.scss';
+  @use './components/festival/Festival.scss';
 
   @font-face {
     font-family: 'RobotoVariable';
@@ -33,6 +34,7 @@
     --border-color: #D9D9D9;
     --gray-background-color: #D6D6D6;
     --soft-burgundy-background-color: #F6D5DE;
+    --soft-pink-background-color: rgba(237, 171, 188, 0.25);    
     --soft-black-text-color: #474746;
     --dark-gray-background-color: #343433;
     --soft-yellow-background-color: #FCF9E3;
