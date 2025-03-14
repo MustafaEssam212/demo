@@ -1,0 +1,165 @@
+
+
+.beyond-tickets-container{
+    width: 90%;
+    margin: 0 auto;
+    
+
+    h1{
+        font-weight: 900;
+        color: var(--black-text-color);
+    }
+
+    h3{
+        font-weight: 400;
+        color: var(--second-black-text-color);
+        margin-top: 16px;
+    }
+
+
+    .icons-cards-container{
+        margin-top: 32px;
+        display: flex;
+        gap: 54px;
+        flex-wrap: wrap;
+        
+        .icon-card{
+            width: calc(50% - 27px);
+            box-shadow: var(--icon-card-box-shadow);
+            padding: 23px 16px;
+            display: flex;
+            gap: 28px;
+
+            img{
+                align-self: flex-start;
+                width: 8%;
+                flex-shrink: 0;
+            }
+
+            .icon-card-texts{
+
+                h2{
+                    font-weight: 900;
+                    color: var(--black-text-color);
+                }
+
+                .inner-icon-card-texts{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                    margin-top: 15px;
+
+
+                    div{
+                        display: flex;
+                        gap: 10px;
+
+                        h4{
+                            font-weight: 400;
+                            color: var(--second-black-text-color);
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 1024px) {
+    .beyond-tickets-container{
+        .icons-cards-container{
+            .icon-card{
+                img{
+                    width: 15%;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 833px) {
+    .beyond-tickets-container{
+        width: 95%;
+        
+    
+        h3{
+            margin-top: 8px;
+        }
+    
+    
+        .icons-cards-container{
+            margin-top: 32px;
+            gap: 16px;
+            justify-content: center;
+
+            .icon-card{
+                flex-direction: column;
+                img{
+                    width: 23%;
+                    align-self: center;
+                }
+
+                .icon-card-texts{
+
+
+                    h2{
+                        text-align: center;
+                    }
+
+
+                }
+
+            }
+
+            .icon-card:nth-child(1){
+                .inner-icon-card-texts{
+                    margin-top: clamp(50px, 9vw, 60px);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px){
+    .beyond-tickets-container{
+        margin-top: 24px;
+        padding: 25px;
+        h3{
+            margin-top: 14px;
+        }
+    
+    
+        .icons-cards-container{
+            margin-top: 16px;
+            gap: 18px;
+            flex-wrap: wrap;
+            
+            .icon-card{
+                width: 100%;
+                flex-direction: row;
+
+                 img{
+                    width: 13%;
+                    align-self: flex-start;
+                }
+    
+                .icon-card-texts{
+                    
+                    h2{
+                        text-align: left;
+                    }
+    
+                    .inner-icon-card-texts{
+                        gap: 4px;
+                        margin-top: 10px;
+                    }
+    
+                }
+            }
+        }
+    }
+}

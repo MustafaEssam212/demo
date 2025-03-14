@@ -1,19 +1,36 @@
+import { lazy, Suspense } from "react";
+import FallbackComponent from "../components/utils/FallbackComponent";
 
-import EmpowerYourFestivalImage from '../assets/static/svg/festival/empower-your-festival.svg';
-import ResponsiveTypography from '../components/reusable/ResponsiveTypography';
+
+const EmpowerYourFestival = lazy(()=> import("../components/pages/festival/EmpowerYourFestival"));
+const RevolutionizeYourFestival = lazy(()=> import("../components/pages/festival/RevolutionizeYourFestival"));
+const GetYourEvent = lazy(()=> import("../components/common/GetYourNextEvent"));
+const TrustedPartners = lazy(()=> import("../components/common/TrustedPartners"));
+const RegistrationManagement = lazy(()=> import("../components/pages/festival/RegisterationManagment"));
+const PaymentGateway = lazy(()=> import("../components/pages/festival/PaymentGateway"));
+const BuyFromVendor = lazy(()=> import("../components/pages/festival/BuyFromVendor"));
+const FloorPlans = lazy(()=> import("../components/pages/festival/FloorPlans"));
+const KidsActivities = lazy(()=> import("../components/pages/festival/KidsActivities"));
 
 const Festival = () => {
     return(
-        <div className='empower-your-festival-container'>
-                <div className='slogans'>
-                    <ResponsiveTypography startFontSizeInPX={46} endFontSizeInPX={26} txt="Empower your festival with Rescounts' all-in-one management platform" HTMLTag="h1" additionalClassNames='slogan-headline' />
-                    <ResponsiveTypography startFontSizeInPX={22} endFontSizeInPX={14} txt="Rescounts simplifies festival management with intuitive tools designed to enhance attendee's experience and organizational efficiency." HTMLTag="h4" additionalClassNames='slogan-parag' />
-                </div>
+        <>
+            <EmpowerYourFestival />
+            <RevolutionizeYourFestival />
+            <RegistrationManagement />
 
-                <div className='img'>
-                    <img src={EmpowerYourFestivalImage} alt='Empower your festival with Rescounts all-in-one management platform' title="Empower your festival with Rescounts'’s' all-in-one management platform" />
-                </div>
-        </div>
+            <Suspense fallback={<FallbackComponent />}>
+                <PaymentGateway />
+                <BuyFromVendor />
+                <FloorPlans />
+            </Suspense>
+
+            <Suspense fallback={<FallbackComponent />}>
+                <KidsActivities />
+                <GetYourEvent />
+                <TrustedPartners />
+            </Suspense>
+        </>
     )
 }
 

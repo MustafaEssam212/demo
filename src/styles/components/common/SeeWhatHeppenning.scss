@@ -41,6 +41,9 @@
                 -o-border-radius: 5px;
                 font-size: 16px;
                 outline: none;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
 
 
@@ -112,7 +115,7 @@
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 580px) {
     .see-whats-happenning-container{
     
         .see-whats-happenning-inputs{

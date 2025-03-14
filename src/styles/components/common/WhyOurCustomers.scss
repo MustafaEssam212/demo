@@ -19,6 +19,8 @@
             .slick-list{
                 .slick-track{
                     .slick-slide{
+                        width: 50%;
+                        
                         img{
                             -webkit-user-drag: none;
                             pointer-events: none;

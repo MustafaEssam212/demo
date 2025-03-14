@@ -1,0 +1,11 @@
+
+@use './ChooseYourPath.scss';
+@use './ClientsStatistics.scss';
+@use './WhyChooseRescounts.scss';
+@use './WhyOurCustomers.scss';
+@use './WhatEventOrganizer.scss';
+
+
+.intro-events-homepage-container{
+    height: clamp(30dvh, 35vw, 75dvh);
+}

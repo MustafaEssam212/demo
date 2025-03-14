@@ -1,12 +1,12 @@
 
   @use './components/reusable/Reusable.scss';
   @use './components/utils/Utils.scss';
-  @use './components/ticketing-page/TicketingPage.scss';
-  @use './components/home/Home.scss';
-  @use './components/events-homepage/EventsHomepage.scss';
+  @use './components/pages/ticketing-page/TicketingPage.scss';
+  @use './components/pages/home/Home.scss';
+  @use './components/pages/events-homepage/EventsHomepage.scss';
   @use './components/common/Common.scss';
   @use './components/navigations/Navigations.scss';
-  @use './components/festival/Festival.scss';
+  @use './components/pages/festival/Festival.scss';
 
   @font-face {
     font-family: 'RobotoVariable';

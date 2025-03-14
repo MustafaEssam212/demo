@@ -1,0 +1,46 @@
+@use './EmpowerYourFestival.scss';
+@use './RevolutionizeYourFestival.scss';
+@use './RegistrationManagement.scss';
+
+
+
+.payment-gateway-container{
+    @extend .registration-management-container;
+
+    @media (max-width: 480px) {
+
+            .texts-container{
+                h6{
+                    display: block;
+                }
+            }
+    }
+}
+
+.buy-from-vendor-container{
+    @extend .registration-management-container;
+    flex-direction: row-reverse;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+
+    @media (max-width: 480px) {
+
+        .texts-container{
+            h6{
+                display: block;
+            }
+        }
+    }
+}
+
+
+.floor-plans-container{
+    @extend .payment-gateway-container;
+}
+
+.kids-activities-container{
+    @extend .buy-from-vendor-container;
+    margin-bottom: 25px;
+}

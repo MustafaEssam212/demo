@@ -1,0 +1,72 @@
+
+
+.discover-popular-event-container{
+    background-color: var(--soft-pink-background-color);
+    padding: 25px 0px;
+
+    h1{
+        color: var(--black-text-color);
+        font-weight: 900;
+    }
+
+    .discover-popular-event-tabs{
+        margin: 25px auto;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .events-cards-container{
+        width: 85%;
+        margin: auto;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
+    }
+
+    .btn-container{
+        margin: 25px auto 0 auto;
+        width: 178px;
+        height: 52px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .discover-popular-event-container{
+        .discover-popular-event-tabs{
+            .discover-popular-event-additional{
+                width: 90% !important;
+            }
+        }
+    }
+}
+
+@media (max-width: 888px) {
+    .discover-popular-event-container{
+        .events-cards-container{
+            width: 95%;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .discover-popular-event-container{
+        .discover-popular-event-tabs{
+            .discover-popular-event-additional{
+                width: 90% !important;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 480px) {
+    .discover-popular-event-container{
+
+        .btn-container{
+            width: 149px;
+            height: 42px;
+        }
+    }
+}

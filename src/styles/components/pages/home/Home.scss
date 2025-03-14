@@ -1,0 +1,7 @@
+@use './DiscoverPopularEvents.scss';
+@use '../events-homepage/ClientsStatistics.scss';
+
+
+.carousel-container{
+    @extend .clients-statistics-container;
+}
