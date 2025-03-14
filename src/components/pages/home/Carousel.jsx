@@ -3,13 +3,13 @@ import { lazy, Suspense } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-import One from '../../assets/static/svg/carousel/one.png';
-import Two from '../../assets/static/svg/carousel/two.png';
-import Three from '../../assets/static/svg/carousel/three.png';
-import Four from '../../assets/static/svg/carousel/four.png';
-import Five from '../../assets/static/svg/carousel/five.png';
-import Six from '../../assets/static/svg/carousel/six.png';
-import Seven from '../../assets/static/svg/carousel/seven.png';
+import One from '../../../assets/static/svg/carousel/one.png';
+import Two from '../../../assets/static/svg/carousel/two.png';
+import Three from '../../../assets/static/svg/carousel/three.png';
+import Four from '../../../assets/static/svg/carousel/four.png';
+import Five from '../../../assets/static/svg/carousel/five.png';
+import Six from '../../../assets/static/svg/carousel/six.png';
+import Seven from '../../../assets/static/svg/carousel/seven.png';
 
 // Import The Slider as Lazy component
 const Slider = lazy(() => import("react-slick"));
